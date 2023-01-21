@@ -1,0 +1,90 @@
+// VARIABLES
+$fontMin: 20px
+$fontDiff: 28
+$minRes: 320px 
+$bodyWidth: 100vw
+$bodyWidthLarge: 1440px
+$minRes: 320px
+$difMaxMinRes: 1120   
+
+// IMPORT
+@import ./_reboot
+
+.container
+    position: relative
+    max-width: 1190px
+    padding: 15px
+    margin: 0 auto
+    box-sizing: content-box
+    .screen
+        position: absolute
+        top: 0
+        left: -1000%
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        transition: 500ms all
+        &__title
+            margin: 30px 0
+            font-size: calc($fontMin + $fontDiff * ((var(--body-max-width) - $minRes) / $difMaxMinRes))
+            text-align: center
+        &__btns
+            padding: 15px
+            display: grid
+            grid-template-columns: auto auto
+            grid-template-rows: auto auto
+            align-items: center
+            gap: 40px
+        .button
+            cursor: pointer
+            outline: none
+            padding: 0
+            display: flex
+            align-items: center
+            justify-content: center
+            border-radius: 10%
+            border: none
+            width: 180px
+            height: 120px
+            box-shadow: 0 0 20px #eee
+            transition: 500ms all
+            img
+                width: 100%
+                height: 100%
+                object-fit: cover
+                border-radius: 10%
+            &:hover, &:focus
+                transform: scale(1.1)
+        .false
+            color: #fff
+            background: #d90429
+        .true
+            color: #fff
+            background: #06d6a0
+        .start
+            height: 80px
+            background-image: linear-gradient(to right, #FF512F 0%, #F09819  51%, #FF512F  100%)
+            background-size: 200% auto
+            border: none
+            border-radius: 10px
+            &:hover, &:focus
+                background-position: right center
+                color: #fff
+    .show
+        left: 50%
+        transform: translateX(-50%)
+@media screen and ( max-width: 992px )
+    .container
+        max-width: 855px
+@media screen and ( max-width: 768px )
+    .container
+        max-width: 660px
+@media screen and ( max-width: 576px )
+    .container
+        max-width: 500px
+        .screen
+            &__btns
+                grid-template-columns: auto
+                grid-template-rows: auto
+                gap: 30px
