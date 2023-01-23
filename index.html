@@ -4,191 +4,190 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.min.css">
-    <title>Document</title>
+    <title>Geographic quiz</title>
 </head>
 <body>
     <div class="wrapper">
-        <div class="container">
-            <div id="start-screen" class="start-screen screen show">
-                <h1 class="title">Title</h1>
-                <button id="start" class="button start">Start</button>
+        <div id="start-screen" class="start-screen screen show-start">
+            <h1 class="screen__title start__title">Let's start!</h1>
+            <button id="start" class="button start">Start</button>
+        </div>
+        <div id="first-screen" class="first-screen screen">
+            <h2 class="screen__title">Which one of theese flags is flag of the South Africa?</h2>
+            <div class="screen__btns">
+                <button id="first-button" class="screen__button button button-option correct">
+                    <img src="https://flagcdn.com/h120/za.png" alt="First option">
+                </button>
+                <button id="second-button" class="screen__button button-option button">
+                    <img src="https://flagcdn.com/h120/ao.png" alt="Second option">
+                </button>
+                <button id="third-button" class="screen__button button-option button">
+                    <img src="https://flagcdn.com/h120/bt.png" alt="Third option">
+                </button>
+                <button id="fourth-button" class="screen__button button-option button">
+                    <img src="https://flagcdn.com/h120/cg.png" alt="Fourth option">
+                </button>
             </div>
-            <div id="first-screen" class="first-screen screen">
-                <h2 class="screen__title">Which one of theese flags is flag of the South Africa?</h2>
-                <div class="screen__btns">
-                    <button id="first-button" class="screen__button button button-option correct">
-                        <img src="https://flagcdn.com/h120/za.png" alt="First option">
-                    </button>
-                    <button id="second-button" class="screen__button button-option button">
-                        <img src="https://flagcdn.com/h120/ao.png" alt="Second option">
-                    </button>
-                    <button id="third-button" class="screen__button button-option button">
-                        <img src="https://flagcdn.com/h120/bt.png" alt="Third option">
-                    </button>
-                    <button id="fourth-button" class="screen__button button-option button">
-                        <img src="https://flagcdn.com/h120/cg.png" alt="Fourth option">
-                    </button>
-                </div>
+        </div>
+        <div id="second-screen" class="second-screen screen">
+            <h2 class="screen__title">Which one of theese flags is flag of the Barbados?</h2>
+            <div class="screen__btns">
+                <button id="first-button" class="screen__button button button-option">
+                    <img src="https://flagcdn.com/h120/bs.png" alt="First option">
+                </button>
+                <button id="second-button" class="screen__button button button-option">
+                    <img src="https://flagcdn.com/h120/kr.png" alt="Second option">
+                </button>
+                <button id="third-button" class="screen__button button button-option correct">
+                    <img src="https://flagcdn.com/h120/bb.png" alt="Third option">
+                </button>
+                <button id="fourth-button" class="screen__button button button-option">
+                    <img src="https://flagcdn.com/h120/bw.png" alt="Fourth option">
+                </button>
             </div>
-            <div id="second-screen" class="second-screen screen">
-                <h2 class="screen__title">Which one of theese flags is flag of the Barbados?</h2>
-                <div class="screen__btns">
-                    <button id="first-button" class="screen__button button button-option">
-                        <img src="https://flagcdn.com/h120/bs.png" alt="First option">
-                    </button>
-                    <button id="second-button" class="screen__button button button-option">
-                        <img src="https://flagcdn.com/h120/kr.png" alt="Second option">
-                    </button>
-                    <button id="third-button" class="screen__button button button-option correct">
-                        <img src="https://flagcdn.com/h120/bb.png" alt="Third option">
-                    </button>
-                    <button id="fourth-button" class="screen__button button button-option">
-                        <img src="https://flagcdn.com/h120/bw.png" alt="Fourth option">
-                    </button>
-                </div>
+        </div>
+        <div id="third-screen" class="third-screen screen">
+            <h2 class="screen__title">Which one of theese flags is flag of the Greenland?</h2>
+            <div class="screen__btns">
+                <button id="first-button" class="screen__button button button-option">
+                    <img src="https://flagcdn.com/h120/sg.png" alt="First option">
+                </button>
+                <button id="second-button" class="screen__button button button-option">
+                    <img src="https://flagcdn.com/h120/id.png" alt="Second option">
+                </button>
+                <button id="third-button" class="screen__button button button-option correct">
+                    <img src="https://flagcdn.com/h120/gl.png" alt="Third option">
+                </button>
+                <button id="fourth-button" class="screen__button button button-option">
+                    <img src="https://flagcdn.com/h120/pl.png" alt="Fourth option">
+                </button>
             </div>
-            <div id="third-screen" class="third-screen screen">
-                <h2 class="screen__title">Which one of theese flags is flag of the Greenland?</h2>
-                <div class="screen__btns">
-                    <button id="first-button" class="screen__button button button-option">
-                        <img src="https://flagcdn.com/h120/sg.png" alt="First option">
-                    </button>
-                    <button id="second-button" class="screen__button button button-option">
-                        <img src="https://flagcdn.com/h120/id.png" alt="Second option">
-                    </button>
-                    <button id="third-button" class="screen__button button button-option correct">
-                        <img src="https://flagcdn.com/h120/gl.png" alt="Third option">
-                    </button>
-                    <button id="fourth-button" class="screen__button button button-option">
-                        <img src="https://flagcdn.com/h120/pl.png" alt="Fourth option">
-                    </button>
-                </div>
+        </div>
+        <div id="fourth-screen" class="fourth-screen screen">
+            <h2 class="screen__title">Which one of theese flags is flag of the Tunisia?</h2>
+            <div class="screen__btns">
+                <button id="first-button" class="screen__button button button-option">
+                    <img src="https://flagcdn.com/h120/tr.png" alt="First option">
+                </button>
+                <button id="second-button" class="screen__button button button-option">
+                    <img src="https://flagcdn.com/h120/mv.png" alt="Second option">
+                </button>
+                <button id="third-button" class="screen__button button button-option">
+                    <img src="https://flagcdn.com/h120/om.png" alt="Third option">
+                </button>
+                <button id="fourth-button" class="screen__button button button-option correct">
+                    <img src="https://flagcdn.com/h120/tn.png" alt="Fourth option">
+                </button>
             </div>
-            <div id="fourth-screen" class="fourth-screen screen">
-                <h2 class="screen__title">Which one of theese flags is flag of the Tunisia?</h2>
-                <div class="screen__btns">
-                    <button id="first-button" class="screen__button button button-option">
-                        <img src="https://flagcdn.com/h120/tr.png" alt="First option">
-                    </button>
-                    <button id="second-button" class="screen__button button button-option">
-                        <img src="https://flagcdn.com/h120/mv.png" alt="Second option">
-                    </button>
-                    <button id="third-button" class="screen__button button button-option">
-                        <img src="https://flagcdn.com/h120/om.png" alt="Third option">
-                    </button>
-                    <button id="fourth-button" class="screen__button button button-option correct">
-                        <img src="https://flagcdn.com/h120/tn.png" alt="Fourth option">
-                    </button>
-                </div>
+        </div>
+        <div id="fifth-screen" class="fifth-screen screen">
+            <h2 class="screen__title">Which one of theese flags is flag of the Switzerland?</h2>
+            <div class="screen__btns">
+                <button id="first-button" class="screen__button button button-option">
+                    <img src="https://flagcdn.com/h120/jp.png" alt="First option">
+                </button>
+                <button id="second-button" class="screen__button button button-option correct">
+                    <img src="https://flagcdn.com/h120/ch.png" alt="Second option">
+                </button>
+                <button id="third-button" class="screen__button button button-option">
+                    <img src="https://flagcdn.com/h120/vn.png" alt="Third option">
+                </button>
+                <button id="fourth-button" class="screen__button button button-option">
+                    <img src="https://flagcdn.com/h120/lb.png" alt="Fourth option">
+                </button>
             </div>
-            <div id="fifth-screen" class="fifth-screen screen">
-                <h2 class="screen__title">Which one of theese flags is flag of the Switzerland?</h2>
-                <div class="screen__btns">
-                    <button id="first-button" class="screen__button button button-option">
-                        <img src="https://flagcdn.com/h120/jp.png" alt="First option">
-                    </button>
-                    <button id="second-button" class="screen__button button button-option correct">
-                        <img src="https://flagcdn.com/h120/ch.png" alt="Second option">
-                    </button>
-                    <button id="third-button" class="screen__button button button-option">
-                        <img src="https://flagcdn.com/h120/vn.png" alt="Third option">
-                    </button>
-                    <button id="fourth-button" class="screen__button button button-option">
-                        <img src="https://flagcdn.com/h120/lb.png" alt="Fourth option">
-                    </button>
-                </div>
+        </div>
+        <div id="sixth-screen" class="sixth-screen screen">
+            <h2 class="screen__title">Which one of theese flags is flag of the Malta?</h2>
+            <div class="screen__btns">
+                <button id="first-button" class="screen__button button button-option">
+                    <img src="https://flagcdn.com/h120/fo.png" alt="First option">
+                </button>
+                <button id="second-button" class="screen__button button button-option">
+                    <img src="https://flagcdn.com/h120/fi.png" alt="Second option">
+                </button>
+                <button id="third-button" class="screen__button button button-option">
+                    <img src="https://flagcdn.com/h120/gb-eng.png" alt="Third option">
+                </button>
+                <button id="fourth-button" class="screen__button button button-option correct">
+                    <img src="https://flagcdn.com/h120/mt.png" alt="Fourth option">
+                </button>
             </div>
-            <div id="sixth-screen" class="sixth-screen screen">
-                <h2 class="screen__title">Which one of theese flags is flag of the Malta?</h2>
-                <div class="screen__btns">
-                    <button id="first-button" class="screen__button button button-option">
-                        <img src="https://flagcdn.com/h120/fo.png" alt="First option">
-                    </button>
-                    <button id="second-button" class="screen__button button button-option">
-                        <img src="https://flagcdn.com/h120/fi.png" alt="Second option">
-                    </button>
-                    <button id="third-button" class="screen__button button button-option">
-                        <img src="https://flagcdn.com/h120/gb-eng.png" alt="Third option">
-                    </button>
-                    <button id="fourth-button" class="screen__button button button-option correct">
-                        <img src="https://flagcdn.com/h120/mt.png" alt="Fourth option">
-                    </button>
-                </div>
+        </div>
+        <div id="seventh-screen" class="seventh-screen screen">
+            <h2 class="screen__title">Which one of theese flags is flag of the Iraq?</h2>
+            <div class="screen__btns">
+                <button id="first-button" class="screen__button button button-option correct">
+                    <img src="https://flagcdn.com/h120/iq.png" alt="First option">
+                </button>
+                <button id="second-button" class="screen__button button button-option">
+                    <img src="https://flagcdn.com/h120/in.png" alt="Second option">
+                </button>
+                <button id="third-button" class="screen__button button button-option">
+                    <img src="https://flagcdn.com/h120/mg.png" alt="Third option">
+                </button>
+                <button id="fourth-button" class="screen__button button button-option">
+                    <img src="https://flagcdn.com/h120/ir.png" alt="Fourth option">
+                </button>
             </div>
-            <div id="seventh-screen" class="seventh-screen screen">
-                <h2 class="screen__title">Which one of theese flags is flag of the Iraq?</h2>
-                <div class="screen__btns">
-                    <button id="first-button" class="screen__button button button-option correct">
-                        <img src="https://flagcdn.com/h120/iq.png" alt="First option">
-                    </button>
-                    <button id="second-button" class="screen__button button button-option">
-                        <img src="https://flagcdn.com/h120/in.png" alt="Second option">
-                    </button>
-                    <button id="third-button" class="screen__button button button-option">
-                        <img src="https://flagcdn.com/h120/mg.png" alt="Third option">
-                    </button>
-                    <button id="fourth-button" class="screen__button button button-option">
-                        <img src="https://flagcdn.com/h120/ir.png" alt="Fourth option">
-                    </button>
-                </div>
+        </div>
+        <div id="eighth-screen" class="eighth-screen screen">
+            <h2 class="screen__title">Which of theese flags is flag of the Slovenia?</h2>
+            <div class="screen__btns">
+                <button id="first-button" class="screen__button button button-option">
+                    <img src="https://flagcdn.com/h120/rs.png" alt="First option">
+                </button>
+                <button id="second-button" class="screen__button button button-option">
+                    <img src="https://flagcdn.com/h120/sk.png" alt="Second option">
+                </button>
+                <button id="third-button" class="screen__button button button-option correct">
+                    <img src="https://flagcdn.com/h120/si.png" alt="Third option">
+                </button>
+                <button id="fourth-button" class="screen__button button-option button">
+                    <img src="https://flagcdn.com/h120/nl.png" alt="Fourth option">
+                </button>
             </div>
-            <div id="eighth-screen" class="eighth-screen screen">
-                <h2 class="screen__title">Which of theese flags is flag of the Slovenia?</h2>
-                <div class="screen__btns">
-                    <button id="first-button" class="screen__button button button-option">
-                        <img src="https://flagcdn.com/h120/rs.png" alt="First option">
-                    </button>
-                    <button id="second-button" class="screen__button button button-option">
-                        <img src="https://flagcdn.com/h120/sk.png" alt="Second option">
-                    </button>
-                    <button id="third-button" class="screen__button button button-option correct">
-                        <img src="https://flagcdn.com/h120/si.png" alt="Third option">
-                    </button>
-                    <button id="fourth-button" class="screen__button button-option button">
-                        <img src="https://flagcdn.com/h120/nl.png" alt="Fourth option">
-                    </button>
-                </div>
+        </div>
+        <div id="ninth-screen" class="ninth-screen screen">
+            <h2 class="screen__title">Which of theese flags is flag of the North Macedonia?</h2>
+            <div class="screen__btns">
+                <button id="first-button" class="screen__button button button-option">
+                    <img src="https://flagcdn.com/h120/me.png" alt="First option">
+                </button>
+                <button id="second-button" class="screen__button button button-option correct">
+                    <img src="https://flagcdn.com/h120/mk.png" alt="Second option">
+                </button>
+                <button id="third-button" class="screen__button button button-option">
+                    <img src="https://flagcdn.com/h120/ge.png" alt="Third option">
+                </button>
+                <button id="fourth-button" class="screen__button button button-option">
+                    <img src="https://flagcdn.com/h120/gr.png" alt="Fourth option">
+                </button>
             </div>
-            <div id="ninth-screen" class="ninth-screen screen">
-                <h2 class="screen__title">Which of theese flags is flag of the North Macedonia?</h2>
-                <div class="screen__btns">
-                    <button id="first-button" class="screen__button button button-option">
-                        <img src="https://flagcdn.com/h120/me.png" alt="First option">
-                    </button>
-                    <button id="second-button" class="screen__button button button-option correct">
-                        <img src="https://flagcdn.com/h120/mk.png" alt="Second option">
-                    </button>
-                    <button id="third-button" class="screen__button button button-option">
-                        <img src="https://flagcdn.com/h120/ge.png" alt="Third option">
-                    </button>
-                    <button id="fourth-button" class="screen__button button button-option">
-                        <img src="https://flagcdn.com/h120/gr.png" alt="Fourth option">
-                    </button>
-                </div>
+        </div>
+        <div id="tenth-screen" class="tenth-screen screen">
+            <h2 class="screen__title">Which of theese flags is flag of the Chad?</h2>
+            <div class="screen__btns">
+                <button id="first-button" class="screen__button button button-option">
+                    <img src="https://flagcdn.com/h120/co.png" alt="First option">
+                </button>
+                <button id="second-button" class="screen__button button button-option">
+                    <img src="https://flagcdn.com/h120/ec.png" alt="Second option">
+                </button>
+                <button id="third-button" class="screen__button button button-option">
+                    <img src="https://flagcdn.com/h120/lt.png" alt="Third option">
+                </button>
+                <button id="fourth-button" class="screen__button button button-option correct">
+                    <img src="https://flagcdn.com/h120/td.png" alt="Fourth option">
+                </button>
             </div>
-            <div id="tenth-screen" class="tenth-screen screen">
-                <h2 class="screen__title">Which of theese flags is flag of the Chad?</h2>
-                <div class="screen__btns">
-                    <button id="first-button" class="screen__button button button-option">
-                        <img src="https://flagcdn.com/h120/co.png" alt="First option">
-                    </button>
-                    <button id="second-button" class="screen__button button button-option">
-                        <img src="https://flagcdn.com/h120/ec.png" alt="Second option">
-                    </button>
-                    <button id="third-button" class="screen__button button button-option">
-                        <img src="https://flagcdn.com/h120/lt.png" alt="Third option">
-                    </button>
-                    <button id="fourth-button" class="screen__button button button-option correct">
-                        <img src="https://flagcdn.com/h120/td.png" alt="Fourth option">
-                    </button>
-                </div>
-            </div>
-            <div id="result-screen" class="result-screen result screen">
-                <h1 class="result__title title">Your result:</h1>
-                <div id="result-message" class="result__message">Your score is 0! Sad(</div>
-            </div>
+        </div>
+        <div id="result-screen" class="result-screen result screen">
+            <h1 class="screen__title result__title">Your result:</h1>
+            <div id="result-message" class="result__message">Your score is 0! Sad(</div>
         </div>
     </div>
     <script src="./js/main.js"></script>

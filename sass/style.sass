@@ -10,12 +10,8 @@ $difMaxMinRes: 1120
 // IMPORT
 @import ./_reboot
 
-.container
+.wrapper
     position: relative
-    max-width: 1190px
-    padding: 15px
-    margin: 0 auto
-    box-sizing: content-box
     .screen
         position: absolute
         top: 0
@@ -29,6 +25,7 @@ $difMaxMinRes: 1120
             margin: 30px 0
             font-size: calc($fontMin + $fontDiff * ((var(--body-max-width) - $minRes) / $difMaxMinRes))
             text-align: center
+            min-width: 300px
         &__btns
             padding: 15px
             display: grid
@@ -71,18 +68,17 @@ $difMaxMinRes: 1120
             &:hover, &:focus
                 background-position: right center
                 color: #fff
+        .result
+            &__message
+                text-align: center
     .show
         left: 50%
         transform: translateX(-50%)
-@media screen and ( max-width: 992px )
-    .container
-        max-width: 855px
-@media screen and ( max-width: 768px )
-    .container
-        max-width: 660px
+    .show-start, .show-result
+        left: 50%
+        transform: translateX(-50%) translateY(90%)
 @media screen and ( max-width: 576px )
-    .container
-        max-width: 500px
+    .wrapper
         .screen
             &__btns
                 grid-template-columns: auto

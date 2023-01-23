@@ -16,7 +16,7 @@ let falseCounter = 0;
 
 btnStart.addEventListener('click', () =>{
     let currentScreen = btnStart.closest(".screen");
-    currentScreen.classList.remove("show");
+    currentScreen.classList.remove("show-start");
     let nextScreenIndex = screenArray.indexOf(currentScreen) + 1;
     let nextScreen = screenArray[nextScreenIndex];
     nextScreen.classList.add("show");
@@ -50,9 +50,9 @@ buttons.forEach(elem =>{
             let nextScreenIndex = screenArray.indexOf(currentScreen) + 1;
             let nextScreen = screenArray[nextScreenIndex];
             nextScreen.classList.add("show");
-            if(screenArray.indexOf(currentScreen) === (screenArray.length - 1)){
+            if(currentScreen === screenArray[screenArray.length - 2]){
                 currentScreen.classList.remove("show");
-                lastScreen.classList.add("show");
+                lastScreen.classList.add("show-result");
             }
           }, "1200") 
     })
